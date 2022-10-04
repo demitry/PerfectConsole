@@ -29,8 +29,8 @@ namespace PerfectConsoleLibrary.BusinessLogic
             try
             {
                 List<CustomText>? messageSets = JsonSerializer
-                    .Deserialize<List<CustomText>>
-                    (File.ReadAllText("CustomText.json", options);
+                    .Deserialize<List<CustomText>>(File.ReadAllText("CustomText.json"), options);
+                   
                 CustomText? messages = messageSets?.Where(x => x.Language == language).First();
 
                 if (messages is null)
