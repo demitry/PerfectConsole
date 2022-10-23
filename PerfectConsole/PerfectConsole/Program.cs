@@ -24,5 +24,7 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
         services
             .AddSingleton<App>()
             .AddSingleton<IMessages, Messages>();
-        
+
     });
+
+ConsoleFeatures.DemonstrateAllColors();
